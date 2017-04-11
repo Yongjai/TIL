@@ -7,7 +7,7 @@ Yongjai의 Today I Learned
 * 파일명은 영어로 작성한다.
 
 ## iOS
-* <a href=“https://github.com/Yongjai/TIL/blob/master/iOS/MemoryManagement.md/”>Memory Management</a>
+* [Memory Management](https://github.com/Yongjai/TIL/blob/master/iOS/MemoryManagement.md/)
 
 ## Data Structure
 
