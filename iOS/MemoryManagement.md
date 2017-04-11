@@ -7,13 +7,13 @@
 ## 왜 메모리 관리를 해야하는가?
 다음 그래프를 보시면,
 
-![Memory Graph](./img/1.png)
+![Memory Graph](https://github.com/Yongjai/TIL/tree/master/img/1.png)
 
 위 그래프는 iPhone의 기본적인 메모리 할당을 보여줍니다.
 예를 들어, 파란색 그래프를 보면 전체 128 중의 12를 Grapics 처리를 위한 메모리가 기본적으로 할당되어 있습니다.
 이렇게 기본적으로 할당되어 있는 그래프들을 뺀 나머지 부분들이 우리에게 남습니다.
 
-![Memory Overview](./img/2.png)
+![Memory Overview](https://github.com/Yongjai/TIL/tree/master/img/2.png)
 
 위 그래프는 남은 부분을 사용하며 생기는 메모리 부하를 나타낸 그래프 입니다.
 일정 수준을 넘어가면 Warning이 발생하고 더 올라가면 사용하지 않는 가장 오래된 앱들을 꺼버리며 메모리를 정리합니다.
@@ -30,7 +30,7 @@ Reference Counting은 메모리에 할당된 객체에 참조중인 개수를 �
 * Objective-c에서만 지원하며 Swift에서는 지원하지 않습니다.
 * 객체를 참조하고 싶을 때 [retain] // 참조를 풀고 싶을 때 [release]
 
-![MRC Example Code](./img/3.png)
+![MRC Example Code](https://github.com/Yongjai/TIL/tree/master/img/3.png)
 
 위 그림을 보면,
 첫 번째 줄 코드를 보면 Person 클래스에서 me 객체를 만들었더니 Reference Count가 1이 되었습니다.
