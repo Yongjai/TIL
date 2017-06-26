@@ -7,7 +7,7 @@
 ## 왜 메모리 관리를 해야하는가?
 
 
-![Memory Graph](../img/1.png)
+![Memory Graph](../img/MemoryManagement/1.png)
 
 
 위 그래프는 iPhone의 기본적인 메모리 할당을 보여줍니다.
@@ -15,7 +15,7 @@
 이렇게 기본적으로 할당되어 있는 그래프들을 뺀 나머지 부분들이 우리에게 남습니다.
 
 
-![Memory Overview](../img/2.png)
+![Memory Overview](../img/MemoryManagement/2.png)
 
 
 위 그래프는 남은 부분을 사용하며 생기는 메모리 부하를 나타낸 그래프 입니다.
@@ -34,7 +34,7 @@ Reference Counting은 메모리에 할당된 객체에 참조중인 개수를 �
 * 객체를 참조하고 싶을 때 [retain] // 참조를 풀고 싶을 때 [release]
 
 
-![MRC Example Code](../img/3.png)
+![MRC Example Code](../img/MemoryManagement/3.png)
 
 
 위 그림을 보면,
