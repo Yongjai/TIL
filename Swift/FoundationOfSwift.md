@@ -93,7 +93,7 @@ Int, Double, Float, Bool, Character, String
 
 * **Character & String**
 
-  `Character`는 하나의 문자*단어가 아닙니다*를 뜻하고, `String`은 문자열을 뜻합니다. 
+  `Character`는 하나의 문자를 뜻하고, `String`은 문자열을 뜻합니다. 
 
    ![String](../img/FoundationOfSwift/4.png)
 

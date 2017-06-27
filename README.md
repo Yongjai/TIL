@@ -2,7 +2,8 @@
 Yongjai의 Today I Learned
 
 ## TIL Rule
-* Markdown(.md)를 사용한다.
+* 1일 1커밋
+* Markdown(.md)을 사용.
 * 파일명은 영어로 작성한다.
 
 ## iOS
@@ -13,5 +14,6 @@ Yongjai의 Today I Learned
 
 ## Data Structure
 * [Basic Concept](https://github.com/Yongjai/TIL/blob/master/DataStructure/BasicConcept.md/) 
+* [Array and Linked List](https://github.com/Yongjai/TIL/blob/master/DataStructure/ArrayAndLinkedList.md/) 
 
 ## OS
