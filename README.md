@@ -7,13 +7,15 @@ Yongjai의 Today I Learned
 * 파일명은 영어로 작성한다.
 
 ## iOS
+### Objective-C
 * [Memory Management](https://github.com/Yongjai/TIL/blob/master/iOS/MemoryManagement.md/)
 
-## Swift
+### Swift
 * [Foundation of Swift](https://github.com/Yongjai/TIL/blob/master/Swift/FoundationOfSwift.md/) 
 
 ## Data Structure
 * [Basic Concept](https://github.com/Yongjai/TIL/blob/master/DataStructure/BasicConcept.md/) 
 * [Array and Linked List](https://github.com/Yongjai/TIL/blob/master/DataStructure/ArrayAndLinkedList.md/) 
+* [Stack and Queue](https://github.com/Yongjai/TIL/blob/master/DataStructure/StackAndQueue.md/) 
 
 ## OS
