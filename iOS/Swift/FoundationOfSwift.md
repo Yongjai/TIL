@@ -45,7 +45,7 @@
 
   변하는 수를 의미한다. 값을 선언한 뒤 그 값을 다시 바꿀 수 있습니다. Swift에서는 변수를 선언할 때 `var`를 이용해 선언합니다. 
 
-   ![variable](../img/FoundationOfSwift/1.png)
+   ![variable](../img/FoundationOfSwift/1)
 
   변수로 선언을 해줬기 때문에 값을 바꿔도 바꾼 값으로 잘 저장되는 것을 알 수 있습니다.
 
@@ -55,7 +55,7 @@
 
   항상 같은 수를 의미한다. 값을 선언하면 다시 그 값을 바꿀 수 없습니다. Swift에서는 변수를 선언할 때 `let`을 이용해 선언합니다. 
 
-    ![Constant](../img/FoundationOfSwift/2.png)
+    ![Constant](../img/FoundationOfSwift/2)
 
   보시다시피 let으로 선언을 해주고 다시 그 값을 바꿔주면 위 사진과 같이 에러가 발생합니다.
 
@@ -63,7 +63,7 @@
 
 물론 위에서 설명한 것처럼 선언과 동시에 값을 지정해 줄 수도 있지만 선언을 해준 뒤 나중에 사용할 수도 있습니다.
 
-  ![Declare](../img/FoundationOfSwift/3.png)
+  ![Declare](../img/FoundationOfSwift/3)
 
 선언을 할 때, 어떤 데이터 타입인지를 같이 작성해주면 당장 값을 알려주지 않아도 나중에 불러서 사용해줄 수 있습니다.
 
@@ -95,7 +95,7 @@ Int, Double, Float, Bool, Character, String
 
   `Character`는 하나의 문자를 뜻하고, `String`은 문자열을 뜻합니다. 
 
-   ![String](../img/FoundationOfSwift/4.png)
+   ![String](../img/FoundationOfSwift/4)
 
   사진에서 보이듯이 character는 Y라는 하나의 문자만을 저장했고, string은 Hello, World!라는 문자열을 저장했습니다.
 
