@@ -8,10 +8,10 @@ Yongjai의 Today I Learned
 
 ## iOS
 ### Objective-C
-* [Memory Management](https://github.com/Yongjai/TIL/blob/master/iOS/MemoryManagement.md/)
+* [Memory Management](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/MemoryManagement.md/)
 
 ### Swift
-* [Foundation of Swift](https://github.com/Yongjai/TIL/blob/master/Swift/FoundationOfSwift.md/) 
+* [Foundation of Swift](https://github.com/Yongjai/TIL/blob/master/iOS/Swift/FoundationOfSwift.md/) 
 
 ## Data Structure
 * [Basic Concept](https://github.com/Yongjai/TIL/blob/master/DataStructure/BasicConcept.md/) 
