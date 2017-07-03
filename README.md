@@ -20,3 +20,4 @@ Yongjai의 Today I Learned
 
 ## OS
 * [Foundation of OS](https://github.com/Yongjai/TIL/blob/master/OS/FoundationOfOS.md/) 
+* [Role of OS](https://github.com/Yongjai/TIL/blob/master/OS/RoleOfOS.md/) 
