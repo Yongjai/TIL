@@ -10,6 +10,7 @@ Yongjai의 Today I Learned
 ### Objective-C
 * [Memory Management](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/MemoryManagement.md/)
 * [Effective Objective-C Chapter 1](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/Effective_Chapter1.md/)
+* [Storyboard vs NIBs vs Code](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/StoryboardvsNIBsvsCode.md/)
 
 ### Swift
 * [Foundation of Swift](https://github.com/Yongjai/TIL/blob/master/iOS/Swift/FoundationOfSwift.md/) 
