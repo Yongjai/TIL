@@ -14,6 +14,7 @@ Yongjai의 Today I Learned
 
 ### Swift
 * [Foundation of Swift](https://github.com/Yongjai/TIL/blob/master/iOS/Swift/FoundationOfSwift.md/) 
+* [Swift Tour — 1](https://github.com/Yongjai/TIL/blob/master/iOS/Swift/SwiftTour—1.md/)
 
 ## Data Structure
 * [Basic Concept](https://github.com/Yongjai/TIL/blob/master/DataStructure/BasicConcept.md/) 

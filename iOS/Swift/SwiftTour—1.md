@@ -42,7 +42,7 @@
 
 
 
-![4](/Users/NEXT/Desktop/TIL/img/BasicGrammar/4.png) 
+![4](../../img/BasicGrammar/4.png) 
 
 빈 배열과 딕셔너리를 선언하는 방법입니다. 위 코드는 타입을 지정해놨지만 아래 코드는 타입을 지정해주지 않았습니다. 
 
