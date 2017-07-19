@@ -12,8 +12,13 @@ This repository is a place to organize what I have studied.
 ### Objective-C
 
 * [Memory Management](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/MemoryManagement.md/)
-* [Effective Objective-C Chapter 1](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/Effective_Chapter1.md/)
 * [Storyboard vs NIBs vs Code](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/StoryboardvsNIBsvsCode.md/)
+
+#### Effective Objective-C
+
+* [Effective Objective-C part 1.](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/Effective_Chapter1.md/)
+* [Effective Objective-C part 2.](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/Effective_Chapter2.md/)
+
 
 ### Swift
 
