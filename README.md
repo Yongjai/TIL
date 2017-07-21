@@ -4,9 +4,9 @@ Hello. I am a student studying iOS programming at NHN NEXT.
 This repository is a place to organize what I have studied.
 
 ## TIL Rule
-* 1일 1커밋 (지못미..)
-* Markdown(.md)을 사용.
-* 파일명은 영어로 작성한다.
+* 1 day 1 commit *// I failed*
+* Use Markdown(.md)
+* File names should be written in English.
 
 ## iOS
 ### Objective-C
