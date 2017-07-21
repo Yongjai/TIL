@@ -3,8 +3,10 @@ Hello. I am a student studying iOS programming at NHN NEXT.
 
 This repository is a place to organize what I have studied.
 
+**The pictures and datas used are taken from NHN NEXT class Resources.**
+
 ## TIL Rule
-* 1 day 1 commit *// I failed*
+* 1 day 1 commit     *// I failed*
 * Use Markdown(.md)
 * File names should be written in English.
 
