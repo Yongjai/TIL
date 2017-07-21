@@ -31,8 +31,12 @@ This repository is a place to organize what I have studied.
 * [Basic Concept](https://github.com/Yongjai/TIL/blob/master/DataStructure/BasicConcept.md/) 
 * [Array and Linked List](https://github.com/Yongjai/TIL/blob/master/DataStructure/ArrayAndLinkedList.md/) 
 * [Stack and Queue](https://github.com/Yongjai/TIL/blob/master/DataStructure/StackAndQueue.md/) 
+* [Basic Concept of Tree](https://github.com/Yongjai/TIL/blob/master/DataStructure/BasicConceptOfTree.md/) 
 
 ## OS
 
 * [Foundation of OS](https://github.com/Yongjai/TIL/blob/master/OS/FoundationOfOS.md/) 
 * [Role of OS](https://github.com/Yongjai/TIL/blob/master/OS/RoleOfOS.md/) 
+
+
+## Algorithm
