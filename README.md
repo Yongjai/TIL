@@ -34,6 +34,7 @@ This repository is a place to organize what I have studied.
 * [Array and Linked List](https://github.com/Yongjai/TIL/blob/master/DataStructure/ArrayAndLinkedList.md/) 
 * [Stack and Queue](https://github.com/Yongjai/TIL/blob/master/DataStructure/StackAndQueue.md/) 
 * [Basic Concept of Tree](https://github.com/Yongjai/TIL/blob/master/DataStructure/BasicConceptOfTree.md/) 
+* [Binary Tree](https://github.com/Yongjai/TIL/blob/master/DataStructure/BinaryTree.md/) 
 
 ## OS
 
