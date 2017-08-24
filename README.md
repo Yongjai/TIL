@@ -1,7 +1,7 @@
 # Today I Learned
 Hello. I am a student studying iOS programming at NHN NEXT.
 
-This repository is a place to organize what I have studied.
+This repository is a place to organize what I have studied :)
 
 **The pictures and datas used are taken from NHN NEXT class Resources.**
 
