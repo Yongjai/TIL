@@ -62,10 +62,10 @@ Run Loop… 한국말로 실행 루프라고 불리는 녀석이 있다. NSRunLo
 
 
 
-//출처 : https://soulpark.wordpress.com/2012/08/28/objective_c_sending_messages/
+**출처** : 
+	* https://soulpark.wordpress.com/2012/08/28/objective_c_sending_messages/
 
-​	     http://linkedlist.tistory.com/category/%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0/iPhone
-
+	*http://linkedlist.tistory.com/category/%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0/iPhone
 
 
 
