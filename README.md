@@ -16,6 +16,7 @@ This repository is a place to organize what I have studied :)
 * [Memory Management](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/MemoryManagement.md/)
 * [Storyboard vs NIBs vs Code](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/StoryboardvsNIBsvsCode.md/)
 * [CoreData vs Realm](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/CoreDatavsRealm.md/)
+* [Multi-thread performSelector](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/Multi-thread_Perform_Seletor/)
 
 #### Effective Objective-C
 
