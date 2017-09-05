@@ -82,7 +82,6 @@ Dispatch Source는 이벤트가 발생하면 자동으로 dispatch queue에 있�
 
 * Timer dispatch source : 주기적으로 알람을 사용자에게 알립니다.
 * Signal dispatch source : UNIX 신호가 도착하면 사용자에게 알립니다.
-  * 얘도 잘 모르겠음. 애플 문서에 나와있으니 다시 확인하자.
 * Descriptor source : 다양한 파일 기반 및 소켓 기반 작업에 대해 알려줍니다.
   * 데이터를 읽을 수 있는 경우
   * 데이터를 쓸 수 있는 경우
@@ -93,9 +92,7 @@ Dispatch Source는 이벤트가 발생하면 자동으로 dispatch queue에 있�
   * 프로세스가 fork 또는 exec 호출을 할 경우
   * 신호가 프로세스에 전달 될 경우
 * Mach port dispatch source : Mach 관련 이벤트를 알려줍니다.
-  * 잘 모르겠음… 실행 파일 헤더?? OS X에서 Mach 커널을 사용해서 실행 파일을 포맷한다고 하는데...
 * Custome dispatch source : 사용자가 정의하고 발생시키는 이벤트 입니다.
-
 
 
 디스패치 소스는 일반적으로 시스템 관련 이벤트를 처리하는 데 사용되는 비동기 콜백 함수를 대체합니다. 디스패치 소스를 구성 할 때 관찰 할 이벤트와 디스패치 대기열 및 해당 이벤트를 처리하는 데 사용할 코드를 지정합니다. 블록 또는 함수를 사용하여 코드를 지정할 수 있습니다 . 관심있는 이벤트가 도착하면 디스패치 소스는 블록 또는 함수를 지정된 디스패치 대기열에 제출하여 실행합니다.
@@ -135,7 +132,7 @@ dispatch_source_merge_data를 호출 하면 source객체의 event handler가 호
 
 업데이트 작업은 메인 큐에서 수행되는데 만약 메인큐를 처리하는 메인 쓰레드가 다른 작업등으로 인해 바쁜 경우, 메인큐의 작업은 지연됩니다. 이 때, DISPATCH_SOURCE_TYPE_DATA_ADD 타입의 source 객체인 경우, 처리되지 못하고 대기 중인 여러 이벤트들은 하나로 통합됩니다. 그리고 핸들러에서 사용될 값(dispatch_source_merge_data 호출시 넘기는 unsigned long 값)은 dispatch_source_merge_data 호출 할때 마다 계속 더해집니다. 이후 메인 쓰레드가 처리가능시점이 되면 event handler가 한 번 호출되면서 그동안 누적된 값이 전달됩니다. dispatch_source_get_data 호출을 하면 값은 다시 0으로 초기화 됩니다. **즉, 이벤트가 바로바로 처리 안되는 경우, 이벤트를 계속 누적시키지 않고 처리 가능 시점에 한 번만 처리할수 있게 이벤트를 통합하고 데이터값은 계속 누적시켜 주는 겁니다.**
 
-하지만 메인 쓰레드가 여유가 있어서 메인 큐에서 바로 바로 가져와 처리 가능하다면, 이벤트 핸들러는 통합 처리 없이 그때 그때마다 수행됩니다. 이벤트 통합을 원하지 않는다면 dispatch source를 사용할 필요는 없다. dispatch_async 호출을 하면 됩니다. dispatch_async 대신 dispatch source를 사용하는 오직 하나의 이유라면 바로 이벤트 통합 처리 때문입니다.
+하지만 메인 쓰레드가 여유가 있어서 메인 큐에서 바로 바로 가져와 처리 가능하다면, 이벤트 핸들러는 통합 처리 없이 그때 그때마다 수행됩니다. 이벤트 통합을 원하지 않는다면 dispatch source를 사용할 필요는 없습니다. dispatch_async 호출을 하면 됩니다. dispatch_async 대신 dispatch source를 사용하는 오직 하나의 이유라면 바로 이벤트 통합 처리 때문입니다.
 
 
 
