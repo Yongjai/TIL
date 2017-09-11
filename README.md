@@ -23,6 +23,7 @@ This repository is a place to organize what I have studied :)
 
 * [Effective Objective-C part 1.](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/Effective_Chapter1.md/)
 * [Effective Objective-C part 2.](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/Effective_Chapter2.md/)
+* [Effective Objective-C part 7.](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/Effective_Chapter7.md/)
 
 
 ### Swift
