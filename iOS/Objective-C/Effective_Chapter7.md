@@ -1,6 +1,8 @@
-\Effective Objective-C
+## Effective Objective-C
 
-Item#47. 시스템 프레임워크를 숙지하라
+
+
+#### Item#47. 시스템 프레임워크를 숙지하라
 
 시스템 프레임워크의 종류는 많이 존재합니다. 시스템 프레임워크는 크게 두 가지로 나눠서 생각할 수 있습니다.
 
@@ -33,12 +35,10 @@ Core Graphics는 2D 그래픽을 그릴 때 사용됩니다. 재밌는 사실은
 
 
 
-Item#48. 반복문에는 블록 열거를 사용하라
+#### Item#48. 반복문에는 블록 열거를 사용하라
 
 한 마디로 말하면 우리가 사용하는 일반적인 for Loop를 사용하지 말라는 의미입니다. 일반적인 for Loop는 다음과 같습니다.
 
-    // for Loop
-    
     // Array
     NSArray *anArray = /* ... */
     for (int i = 0; i < anArray.count; i++) {
@@ -68,7 +68,7 @@ Item#48. 반복문에는 블록 열거를 사용하라
 Fast Enumerator 방식도 있습니다.
 
     // Fast Enumerator
-    
+
     // Array
     NSArray *anArray = /* ... */
     for (id object in anArray) {
@@ -91,7 +91,7 @@ Fast Enumerator 방식도 있습니다.
 Fast Enumerator 방식은 기존의 for Loop보다 훨씬 코드도 간결하고 성능 속도도 가장 빠르다는 장점이 있습니다. 하지만 이 방법을 사용할 때는 인덱스를 별도로 관리해주기 위해 변수를 따로 관리해주어야 합니다. 또한  Dictionary의 Key, Value 값 중에 하나만 받아올 수 있다는 단점이 존재합니다. 그래서 이러한 단점은 블록 기반 열거 방법을 이용하면 깔끔하게 사용할 수 있습니다.
 
     // Block
-    
+
     // Array
     NSArray *anArray = /* ... */
     [anArray enumerateObjectsUsingBlock:^(id object, NSUInteger idx, BOOL *stop) { 
@@ -119,34 +119,27 @@ Fast Enumerator 방식은 기존의 for Loop보다 훨씬 코드도 간결하고
 
 
 
-Item#49. 커스텀 메모리 관리 시맨틱을 가진 컬랙션을 만들기 위해 무비용 전환을 사용하라
+#### Item#49. 커스텀 메모리 관리 시맨틱을 가진 컬랙션을 만들기 위해 무비용 전환을 사용하라
 
 여기에서는 아까 말했던 Toll-Free Bridge에 대해 좀 더 자세히 설명하고 있습니다. Core Foundation은 ARC의 범위가 아니기 때문에 Core Foundation의 구조체를 사용할 때는 수동으로 메모리 관리를 해줘야 합니다. 그러나 Core Foundation 중 일부는 타입 캐스팅을 통해 Objective-C 객체처럼 사용이 가능해서 ARC에게 메모리 관리 책임을 맡길 수 있습니다. 쉽게 설명하면, Foundation의 Objective-C 객체와 Core Foundation의 C 구조체 사이의 형변환(Type Casting)을 어떻게 하는지를 설명하고 있습니다. 타입 캐스팅을 할 때는 컴파일러에게 메모리 관리 책임에 관한 정보를 알려줄 필요가 있는데 3가지를 이용할 수 있습니다.
 
 - __bridge : Objective-C의 객체를 만들어서 Corefoundation 구조체에 bridge를 하는 경우에 사용합니다. 
-
-    id aObcject = [[NSObject alloc] init];
-    void *pObject = (__bridge void*) aObject; 
-    id otherObject = (__bridge id) pObject;
-
-Objective-C의 객체를 잠시 Core Foundation 타입으로 변환하고 싶을 때 사용합니다. 따라서 ARC가 메모리 해지의 책임을 갖고 있습니다.
+      id aObcject = [[NSObject alloc] init];
+      void pObject = (__bridge void) aObject; 
+      id otherObject = (__bridge id) pObject;
+  Objective-C의 객체를 잠시 Core Foundation 타입으로 변환하고 싶을 때 사용합니다. 따라서 ARC가 메모리 해지의 책임을 갖고 있습니다.
 
 - __brige_retain (CFBridgingRetain) : 위와 같은 경우이지만 이때는 retain이라는 말이 더 붙습니다. 그 이유는 객체의 소유권까지 같이 넘겨주기 때문입니다.
-
-    id aObcject = [[NSObject alloc] init];
-    void *pObject = (__bridge_retained void*) aObject;
-
-Obj-C 객체를 Core Foundation 구조체로 타입 캐스팅하는 경우 사용합니다.  __bridge와 다른 것은 객체의 소유권까지 넘겨주기 때문에 직접 메모리 해지를 해줘야 합니다. 즉 Core Foundation 타입으로 변환된 객체에 대한 메모리 해지의 책임은 개발자에게 있으며 CFRelease()를 통해 수동으로 관리를 해야 한다.
-
+      id aObcject = [[NSObject alloc] init];
+      void pObject = (__bridge_retained void) aObject;
+  Obj-C 객체를 Core Foundation 구조체로 타입 캐스팅하는 경우 사용합니다.  __bridge와 다른 것은 객체의 소유권까지 넘겨주기 때문에 직접 메모리 해지를 해줘야 합니다. 즉 Core Foundation 타입으로 변환된 객체에 대한 메모리 해지의 책임은 개발자에게 있으며 CFRelease()를 통해 수동으로 관리를 해야 한다.
 - __brige_transfer (CFBridgingRelease) : 위의 두 경우와 반대 경우에 사용하게 됩니다. Core Foundation 구조체를 Obj-C 객체로 타입 캐스팅을 할 때 사용되는 지시어 입니다.
-
-    id aObject = (__bridge_transfer id) pObject;
-
-Core Foundation에서 Obj-C 객체로 타입 캐스팅 하는 경우 사용합니다. 보통 생성된 Core Foundation 객체는 CFRelease()를 이용하여 메모리 해지를 해줘야 하지만, Obj-C 객체로 바뀌었으니 ARC에게 메모리 해지 권한을 넘기는 의미입니다.
+      id aObject = (__bridge_transfer id) pObject;
+  Core Foundation에서 Obj-C 객체로 타입 캐스팅 하는 경우 사용합니다. 보통 생성된 Core Foundation 객체는 CFRelease()를 이용하여 메모리 해지를 해줘야 하지만, Obj-C 객체로 바뀌었으니 ARC에게 메모리 해지 권한을 넘기는 의미입니다.
 
 
 
-Item#50. 캐시가 필요할 때 NSDictionary보다는 NSCache를 사용하라
+#### Item#50. 캐시가 필요할 때 NSDictionary보다는 NSCache를 사용하라
 
 미리 무언가를 가져와서 전에 썼던 것을 계속 사용하는 것이 캐시입니다. 그래서 보통 생각하기를 딕셔너리를 사용해서 키값을 이용해서 value에 저장할 데이터를 넣으면 캐시처럼 사용할 수 있다고 생각하게 됩니다. 물론 사용해도 되긴 하지만 캐시를 사용하기 위한 객체가 존재한다는 것을 알아야 합니다. 바로 NSCache입니다. 사용법은 딕셔너리를 사용하는 방법과 같습니다. 
 
@@ -156,7 +149,7 @@ NSCache에는 리소스 지표라는 것이 있습니다. 캐시에 들어갈 �
 
 
 
-Item#51. initialize와 load 메서드는 간결하게 만들라
+#### Item#51. initialize와 load 메서드는 간결하게 만들라
 
 클래스 메소드 중에서 initialize와 load라는 게 있습니다. 이것들은 클래스 메소드이기 클래스가 메모리에 로드가 될 때, 딱 한 번만 불리게 됩니다. Objective-C를 예로 들면 런타임 시점에 클래스들을 힙에 올리게 되는 데 그 시점에 한 번만 불리게 됩니다. 추가적으로 설명하자면 클래스들도 하나의 객체이기 때문에 힙에 한 자리씩 차지하고 있습니다.
 
@@ -170,7 +163,7 @@ Item#51. initialize와 load 메서드는 간결하게 만들라
 
 
 
-Item#52. NSTimer가 타깃을 리테인한다는 사실을 기억하라
+#### Item#52. NSTimer가 타깃을 리테인한다는 사실을 기억하라
 
 NSTimer는 사용할 곳도 많고 마음대로 쓸 수 있는 유용한 객체입니다. 특정 날짜와 시간 그리고 일정 시간 뒤에 실행되도록 하거나 반복을 정의할 수 있습니다. 타이머를 생성하는 메서드는 다음과 같습니다.
 
@@ -182,16 +175,15 @@ NSTimer는 사용할 곳도 많고 마음대로 쓸 수 있는 유용한 객체�
 이 메서드를 사용해서 일정 시간 뒤에 이벤트를 발생시키는 타이머를 만들 수 있고, 반복할 수도 있습니다. 중요한 점은 타이머는 타깃을 리테인하기 때문에	반복하는 타이머를 사용할 때는 주의를 해야 합니다. 타이머가 타겟을 만들지만 타이머는 타겟을 리테인 하고 있기 때문입니다. 그래서 반복하는 타이머를 사용하게 되면 상호참조하는 것처럼 서로 물고 있는 형태가 됩니다. 그래서 만약 EOCClass 인스턴스의 참조가 제거되어도 릴리즈되지 않고 살아있게 됩니다. 참조가 제거되었기 때문에 인스턴스에 접근하는 것은 이제 불가능합니다. 영원히 반복이 실행되며 만약 네트워크로부터 데이터를 받아오는 경우라면 영원히 데이터를 받아오게 됩니다. 그림으로 보면 아래와 같습니다.
 
 
-![Retain Cycle](../../img/Chapter7/1.png)
 
  
 
 이 문제를 해결하기 위해서는 단 하나의 방법인 블록 기반으로 타이머를 사용해야 합니다. 예시는 다음과 같습니다.
 
     #import <Foundation/Foundation.h>
-    
+
     @interface NSTimer (EOCBlocksSupport)
-    
+
     + (void)eoc_scheduledTimerWithTimeInterval:(NSTimeInterval)interval
                                      block:(void(^)())block
                                    repeats:(BOOL)repeats;
@@ -234,7 +226,7 @@ NSTimer는 사용할 곳도 많고 마음대로 쓸 수 있는 유용한 객체�
 
 
 
-끝으로
+#### 끝으로
 
 지금까지 Effective Objective-C를 읽고 그 안의 내용들을 정리해봤습니다. 물론 정확하지 않은 내용도 있고 아직 제대로 이해하지 못한 부분도 있기 때문에 계속해서 읽고 공부해야 할 것 같습니다. 
 
