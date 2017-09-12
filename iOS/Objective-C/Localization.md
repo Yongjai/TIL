@@ -93,5 +93,5 @@ WWDC 동영상 중에 이와 관련된 항목이 많이 있습니다.
 
  
 
-
+https://github.com/Yongjai/iOS_Adv/tree/master/Localization_Example 에서 위의 예제를 확인하실 수 있습니다.
 
