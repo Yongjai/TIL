@@ -18,7 +18,8 @@ This repository is a place to organize what I have studied :)
 * [CoreData vs Realm](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/CoreDatavsRealm.md/)
 * [PerformSelector vs GCD](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/PerformSelectorvsGCD.md/)
 * [WatchKit](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/WatchKit.md/)
-
+* [Localization](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/Localization.md/)
+* [Fragmentation](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/Fragmentation.md/)
 #### Effective Objective-C
 
 * [Effective Objective-C part 1.](https://github.com/Yongjai/TIL/blob/master/iOS/Objective-C/Effective_Chapter1.md/)
