@@ -33,6 +33,10 @@ This repository is a place to organize what I have studied :)
 * [Swift Tour — 1](https://github.com/Yongjai/TIL/blob/master/iOS/Swift/SwiftTour—1.md/)
 * [Swift Tour — 2](https://github.com/Yongjai/TIL/blob/master/iOS/Swift/SwiftTour—2.md/)
 
+### 번역
+
+* [Expected App Behaviors](https://github.com/Yongjai/TIL/blob/master/iOS/trans/ExpectedAppBehaviors.md)
+
 ## Data Structure
 
 * [Basic Concept](https://github.com/Yongjai/TIL/blob/master/DataStructure/BasicConcept.md/) 
