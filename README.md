@@ -36,6 +36,7 @@ This repository is a place to organize what I have studied :)
 ### 번역
 
 * [Expected App Behaviors](https://github.com/Yongjai/TIL/blob/master/iOS/trans/ExpectedAppBehaviors.md)
+* [TheAppLifeCycle](https://github.com/Yongjai/TIL/blob/master/iOS/trans/TheAppLifeCycle.md)
 
 ## Data Structure
 
