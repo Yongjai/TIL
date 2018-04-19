@@ -305,3 +305,5 @@ Newsstand Kit Framework를 사용하여 다운로드를 시작하면 시스템�
 - 백그라운드 실행을 선택해제 하는 것은 권장하지는 않지만, 특정 조건에서는 기본 옵션이 될 수 있습니다. 특히 백그라운드에서 실행되는 코드가 복잡성을 증가시키는 경우 앱을 종료시키는 것이 간단한 해결책이 될 수 있습니다.
 - 많은 메모리를 소비하고, 쉽게 메모리를 해제 할 수 없는 경우 시스템이 앱을 빠르게 종료하여 다른 앱을 위한 공간을 확보 할 수 있습니다.
 
+출처 : https://developer.apple.com/library/content/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html#//apple_ref/doc/uid/TP40007072-CH4-SW1
+
