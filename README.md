@@ -38,7 +38,9 @@ This repository is a place to organize what I have studied :)
 * [Expected App Behaviors](https://github.com/Yongjai/TIL/blob/master/iOS/trans/ExpectedAppBehaviors.md)
 * [TheAppLifeCycle](https://github.com/Yongjai/TIL/blob/master/iOS/trans/TheAppLifeCycle.md)
 * [Background Execution](https://github.com/Yongjai/TIL/blob/master/iOS/trans/BackgroundExecution.md)
-* [Strategies for HandlingAppStateTransitions](https://github.com/Yongjai/TIL/blob/master/iOS/trans/StrategiesForHandlingAppStateTransitions.md)
+* [Strategies for Handling App State Transitions](https://github.com/Yongjai/TIL/blob/master/iOS/trans/StrategiesForHandlingAppStateTransitions.md)
+* [Strategies for Implementing Specific App Features](https://github.com/Yongjai/TIL/blob/master/iOS/trans/StrategiesForImplementingSpecificAppFeatures.md)
+
 
 
 ## Data Structure
