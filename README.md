@@ -35,11 +35,15 @@ This repository is a place to organize what I have studied :)
 
 ### 번역
 
+#### App Programming Guide for iOS
 * [Expected App Behaviors](https://github.com/Yongjai/TIL/blob/master/iOS/trans/ExpectedAppBehaviors.md)
-* [TheAppLifeCycle](https://github.com/Yongjai/TIL/blob/master/iOS/trans/TheAppLifeCycle.md)
+* [The App Life Cycle](https://github.com/Yongjai/TIL/blob/master/iOS/trans/TheAppLifeCycle.md)
 * [Background Execution](https://github.com/Yongjai/TIL/blob/master/iOS/trans/BackgroundExecution.md)
 * [Strategies for Handling App State Transitions](https://github.com/Yongjai/TIL/blob/master/iOS/trans/StrategiesForHandlingAppStateTransitions.md)
 * [Strategies for Implementing Specific App Features](https://github.com/Yongjai/TIL/blob/master/iOS/trans/StrategiesForImplementingSpecificAppFeatures.md)
+
+#### View Controller Programming Guide for iOS
+*  [Overview](https://github.com/Yongjai/TIL/blob/master/iOS/trans/Overview.md)
 
 
 
