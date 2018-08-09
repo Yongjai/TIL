@@ -33,6 +33,8 @@ This repository is a place to organize what I have studied :)
 * [Swift Tour — 1](https://github.com/Yongjai/TIL/blob/master/iOS/Swift/SwiftTour—1.md/)
 * [Swift Tour — 2](https://github.com/Yongjai/TIL/blob/master/iOS/Swift/SwiftTour—2.md/)
 
+
+
 ### 번역
 
 #### App Programming Guide for iOS
@@ -55,6 +57,7 @@ This repository is a place to organize what I have studied :)
 
 
 
+
 ## Data Structure
 
 * [Basic Concept](https://github.com/Yongjai/TIL/blob/master/DataStructure/BasicConcept.md/) 
@@ -63,10 +66,3 @@ This repository is a place to organize what I have studied :)
 * [Basic Concept of Tree](https://github.com/Yongjai/TIL/blob/master/DataStructure/BasicConceptOfTree.md/) 
 * [Binary Tree](https://github.com/Yongjai/TIL/blob/master/DataStructure/BinaryTree.md/) 
 
-## OS
-
-* [Foundation of OS](https://github.com/Yongjai/TIL/blob/master/OS/FoundationOfOS.md/) 
-* [Role of OS](https://github.com/Yongjai/TIL/blob/master/OS/RoleOfOS.md/) 
-
-
-## Algorithm
